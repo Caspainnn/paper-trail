@@ -1,0 +1,18 @@
+.field-map{margin:18px 0;padding:16px;border:1px solid var(--line);border-radius:8px;background:var(--bg)}
+.field-map-canvas{height:490px;width:100%;min-width:0;background:var(--paper)}
+.field-map-svg{display:block;width:100%;height:100%;color:var(--text);font:16px/1.55 'Microsoft YaHei','Segoe UI',sans-serif}
+.field-map-svg .markmap-foreign{color:var(--text)}.field-map-svg .markmap-foreign div{padding:7px 4px!important;line-height:1.6!important;overflow-wrap:anywhere}
+.field-map-svg .markmap-link{fill:none;stroke-opacity:.65}
+.field-map-svg circle{cursor:pointer;stroke-width:1.5px}.field-map-svg circle:focus{outline:none;stroke:var(--accent);stroke-width:4px}
+.map-actions{margin:12px 0}.map-actions button{font-size:13px}
+.field-map-dialog{width:94vw;max-width:1600px;height:90vh;padding:52px 18px 12px;overflow:hidden;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--text)}
+.field-map-dialog[open]{display:flex;flex-direction:column}.field-map-dialog::backdrop{background:#0009}
+.field-map-dialog.diagram-fullscreen{position:fixed;inset:0;width:100vw;max-width:none;height:100dvh;max-height:none;margin:0;border:0;border-radius:0}
+.field-map-dialog .field-map-canvas{flex:1;min-height:0;height:auto}
+.field-map-close{position:absolute;top:10px;right:12px;width:36px;height:36px;padding:9px;border:0;background:transparent;color:var(--text)}
+.field-map-close svg{width:18px;height:18px;fill:currentColor}
+.field-map-dialog .diagram-controls{flex:none;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:10px;padding-top:12px}
+.field-map-dialog .diagram-controls .map-text-control{width:auto;font-size:12px;padding:6px 10px}
+@media(max-width:760px){.field-map{padding:12px}.field-map-canvas{height:450px}.field-map-dialog{width:98vw;padding:48px 10px 10px}.field-map-svg{font-size:17px}}
+@media(prefers-reduced-motion:reduce){.field-map *{transition:none!important}}
+@media print{.map-actions{display:none}.field-map-canvas{height:600px}}
